@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { InfoUser } from './components/infoUser';
+
+import { Menu } from './components/menu';
+import { Search } from './components/search';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      {/* Barra de pesquisa, submit, chamar a api, mostrar o perfil e dados, mostrar 5 seguidores e seus perfis
+      Rotas >  Detalhes do perfil consegue ver os detalhes de todo mundo.*/}
+
+      <Menu/>
+
+      <Search/>
+
+
     </div>
   );
 }
