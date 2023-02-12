@@ -6,7 +6,7 @@ import { Search } from './components/search';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App overflow-hidden">
 
       {/* Barra de pesquisa, submit, chamar a api, mostrar o perfil e dados, mostrar 5 seguidores e seus perfis
       Rotas >  Detalhes do perfil consegue ver os detalhes de todo mundo.*/}

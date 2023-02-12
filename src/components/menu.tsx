@@ -13,7 +13,6 @@ export function Menu() {
                     https://docs.github.com/pt/...
                 </a>
             </p>
-
         </div>
     )
 }
