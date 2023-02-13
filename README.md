@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+O projeto é um web app que permite que o usuário pesquise por um perfil no Github a partir do nome de usuário, e exibe algumas informações sobre esse usuário, como nome, avatar, bio, localização e e-mail.
+
+O projeto consiste em duas partes principais:
+
+A primeira parte é a tela de busca (Search.tsx), onde o usuário pode inserir o nome de usuário e iniciar a pesquisa. Quando o usuário pressiona "Enter", a função getUserData é acionada, que usa a API do Github para recuperar informações sobre o usuário. A resposta da API é então passada para o componente InfoUser, que exibe as informações na tela.
+
+A segunda parte é o componente InfoUser.tsx, que exibe as informações do usuário recuperadas da API. Esse componente recebe as informações do usuário como uma prop chamada userData e renderiza as informações do usuário na tela.
+
+O projeto também foi modificado para incluir a funcionalidade de exibir informações sobre os seguidores do usuário pesquisado. Para isso, foi adicionada uma nova prop chamada followers no componente InfoUser.tsx, que recebe um array de objetos contendo informações sobre os seguidores do usuário. As informações dos seguidores são então renderizadas na tela do mesmo modo que as informações do usuário pesquisado.
+
 ## Available Scripts
 
 In the project directory, you can run:
